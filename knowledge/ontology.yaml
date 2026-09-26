@@ -1,0 +1,17 @@
+acoustic_concepts:
+  - F0_HIGH
+  - F0_LOW
+  - ENERGY_HIGH
+  - ENERGY_LOW
+  - RATE_FAST
+  - RATE_SLOW
+  - PAUSE_LONG
+  - PAUSE_SHORT
+intermediate_concepts:
+  - HIGH_AROUSAL
+  - LOW_AROUSAL
+emotions:
+  - ANGER
+  - HAPPY
+  - SAD
+  - NEUTRAL

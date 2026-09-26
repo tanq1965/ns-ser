@@ -1,0 +1,27 @@
+- id: R_ANGER
+  type: all
+  inputs: [HIGH_AROUSAL, PAUSE_SHORT]
+  conclusion: ANGER
+  explanation: "Arousal cao + ít ngắt quãng — khớp mô tả vocal cues của anger (nói dồn dập, ít pause) trong Scherer (2003)."
+
+- id: R_HAPPY
+  type: all
+  inputs: [HIGH_AROUSAL, PAUSE_LONG]
+  conclusion: HAPPY
+  explanation: "Heuristic yếu nhất trong rule set — happy không có tương quan pause rõ ràng như anger trong tài liệu; dùng làm nhánh còn lại để rule set đầy đủ. Dự kiến là nguồn lỗi chính, cần xác nhận ở error analysis Tuần 10-11."
+  evidence: weak_heuristic
+  status: hypothesis   # thêm để rule set đủ 4 nhánh, không có cơ sở
+                        # literature trực tiếp cho pause↔happy — dự kiến
+                        # nguồn lỗi chính, cần validate ở error analysis Tuần 10-11
+
+- id: R_SAD
+  type: all
+  inputs: [LOW_AROUSAL, PAUSE_LONG]
+  conclusion: SAD
+  explanation: "Arousal thấp + nhiều khoảng lặng — khớp mô tả vocal cues của sadness (chậm, trầm, ngắt quãng nhiều)."
+
+- id: R_NEUTRAL
+  type: all
+  inputs: [LOW_AROUSAL, PAUSE_SHORT]
+  conclusion: NEUTRAL
+  explanation: "Arousal thấp, không ngắt quãng bất thường — dùng làm nhánh mặc định trong không gian low-arousal."

@@ -1,0 +1,16 @@
+- id: R_AROUSAL_HIGH
+  type: threshold
+  inputs: [F0_HIGH, ENERGY_HIGH, RATE_FAST]
+  min_matches: 2
+  conclusion: HIGH_AROUSAL
+  explanation: "Khi ≥2/3 đặc trưng (F0, energy, tốc độ nói) ở mức cao, suy ra arousal cao — tương quan prosody-arousal được ghi nhận rộng rãi (Scherer, 2003)."
+  evidence: literature_inspired_heuristic
+  status: moderate   # tương quan prosody-arousal có trong Scherer 2003;
+                      # ngưỡng "≥2/3" cụ thể là heuristic tự đặt, chưa validate
+
+- id: R_AROUSAL_LOW
+  type: threshold
+  inputs: [F0_LOW, ENERGY_LOW, RATE_SLOW]
+  min_matches: 2
+  conclusion: LOW_AROUSAL
+  explanation: "Khi ≥2/3 đặc trưng ở mức thấp, suy ra arousal thấp."
